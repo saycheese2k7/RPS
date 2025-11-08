@@ -24,8 +24,9 @@ function getUserChoice() {
     let initialuserchoice = prompt();
     let userchoice = initialuserchoice.toLowerCase();
     return userchoice
-
 }
+
+let userchoice = getUserChoice()
 
 function playRound(user, computer){
 
