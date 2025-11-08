@@ -3,12 +3,12 @@ let userscore = 0;
 
 function getComputerChoice() {
 
-    let computerchoice = Math.random();
+    let initialcomputerchoice = Math.random();
 
-    if(computerchoice < 0.33){
+    if(initialcomputerchoice < 0.33){
         return 'rock';
     }
-    else if(computerchoice < 0.66){
+    else if(initialcomputerchoice < 0.66){
         return 'paper';
     }
     else{
@@ -17,10 +17,13 @@ function getComputerChoice() {
 
 }
 
+let computerchoice = getComputerChoice()
+
 function getUserChoice() {
 
     let initialuserchoice = prompt();
     let userchoice = initialuserchoice.toLowerCase();
+    return userchoice
 
 }
 
