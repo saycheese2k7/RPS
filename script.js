@@ -34,27 +34,27 @@ function playRound(user, computer){
         console.log("Tie!");
     }
     else if(user==='rock' && computer==='scissor'){
-        console.log("You win!");
+        console.log(`You win! ${user} beats ${computer}`);
         return userscore += 1;
     }
     else if(user==='rock' && computer==='paper'){
-        console.log("You lose!");
+        console.log(`You lose! ${computer} beats ${user}`);
         return computerscore += 1;
     }
     else if(user==='paper' && computer==='scissor'){
-        console.log("You lose!");
+        console.log(`You lose! ${computer} beats ${user}`);
         return computerscore += 1;
     }
     else if(user==='paper' && computer==='rock'){
-        console.log("You win!")
+        console.log(`You win! ${user} beats ${computer}`);
         return userscore += 1;
     }
     else if(user==='scissor' && computer==='rock'){
-        console.log("You lose!");
+        console.log(`You lose! ${computer} beats ${user}`);
         return computerscore += 1;
     }
     else{
-        console.log("You win!")
+        console.log(`You win! ${user} beats ${computer}`);
         return userscore += 1;
     }
     
