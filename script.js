@@ -60,4 +60,20 @@ function playRound(user, computer){
     
 }
 
-playRound(userchoice, computerchoice)
+for (let i = 0; i < 5; i++) {
+    userchoice = getUserChoice();
+    computerchoice = getComputerChoice();
+    playRound(userchoice, computerchoice)
+}
+
+if(userscore > computerscore){
+    console.log(`You win the game! Your score is ${userscore} and computer's score is ${computerscore}`);
+}
+else if(userscore < computerscore){
+    console.log(`You lose the game! Your score is ${userscore} and computer's score is ${computerscore}`);
+}
+else{
+    console.log(`It's a tie! Your score is ${userscore} and computer's score is ${computerscore}`);
+}
+
+
