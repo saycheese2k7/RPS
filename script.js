@@ -34,27 +34,27 @@ function playRound(user, computer){
         console.log("Tie!");
     }
     else if(user==='rock' && computer==='scissor'){
-        console.log(`You win! ${user} beats ${computer}`);
+        console.log(`You win! ${user} beats ${computer}. Your score is ${userscore + 1} and computer's score is ${computerscore}`);
         return userscore += 1;
     }
     else if(user==='rock' && computer==='paper'){
-        console.log(`You lose! ${computer} beats ${user}`);
+        console.log(`You lose! ${computer} beats ${user}. Your score is ${userscore} and computer's score is ${computerscore + 1}`);
         return computerscore += 1;
     }
     else if(user==='paper' && computer==='scissor'){
-        console.log(`You lose! ${computer} beats ${user}`);
+        console.log(`You lose! ${computer} beats ${user}. Your score is ${userscore} and computer's score is ${computerscore + 1}`);
         return computerscore += 1;
     }
     else if(user==='paper' && computer==='rock'){
-        console.log(`You win! ${user} beats ${computer}`);
+        console.log(`You win! ${user} beats ${computer}. Your score is ${userscore + 1} and computer's score is ${computerscore}`);
         return userscore += 1;
     }
     else if(user==='scissor' && computer==='rock'){
-        console.log(`You lose! ${computer} beats ${user}`);
+        console.log(`You lose! ${computer} beats ${user}. Your score is ${userscore} and computer's score is ${computerscore + 1}`);
         return computerscore += 1;
     }
     else{
-        console.log(`You win! ${user} beats ${computer}`);
+        console.log(`You win! ${user} beats ${computer}. Your score is ${userscore + 1} and computer's score is ${computerscore}`);
         return userscore += 1;
     }
     
