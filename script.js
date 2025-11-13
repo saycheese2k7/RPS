@@ -1,5 +1,6 @@
 let computerscore = 0;
 let userscore = 0;
+let initialuserchoice
 
 function getComputerChoice() {
 
@@ -17,10 +18,29 @@ function getComputerChoice() {
 
 }
 
+function rockbtn() {
+
+    initialuserchoice = 'rock';
+    return initialuserchoice;
+}
+
+
+function paperbtn() {
+
+    initialuserchoice = 'paper';
+    return initialuserchoice;
+}
+
+
+function scissorbtn() {
+
+    initialuserchoice = 'scissor';
+    return initialuserchoice;
+}
+
 function getUserChoice() {
 
-    let initialuserchoice = prompt();
-    let userchoice = initialuserchoice.toLowerCase();
+    let userchoice = initialuserchoice;
     return userchoice
 }
 
@@ -56,7 +76,7 @@ function playRound(user, computer){
     
 }
 
-for (let i = 0; i < 5; i++) {
+function letsplay() {
     userchoice = getUserChoice();
     computerchoice = getComputerChoice();
     playRound(userchoice, computerchoice)
